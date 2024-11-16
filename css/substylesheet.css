@@ -1,0 +1,162 @@
+:root {
+    --primary-color: #3498db; /* Electric Blue */
+    --secondary-color: #ecf0f1; /* Light Gray */
+    --accent-color: #f1c40f; /* Bright Yellow */
+    --background-color: #ffffff; /* White */
+    --text-color: #2d3436; /* Dark Slate */
+    --heading-color: #2c3e50; /* Navy Blue */
+    --link-color: var(--primary-color); /* Electric Blue */
+    --hover-link-color: var(--accent-color); /* Bright Yellow */
+    --footer-background-color: #34495e; /* Charcoal Blue */
+    --footer-text-color: #ffffff; /* White */
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+.sub-nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sub-nav-link:hover {
+    background-color: var(--footer-background-color); /* Change to secondary color */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+/* Main Content */
+main {
+    padding: 60px 20px;
+    background-color: var(--heading-color);
+}
+
+.sub-project-details {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project Summary Section */
+.sub-project-summary {
+    background-color: var(--text-color);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sub-project-summary:hover {
+    transform: translateY(-10px); /* Move the card slightly up on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for hover */
+}
+
+.sub-highlight-text {
+    color: var(--primary-color); /* Primary color for headings */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-project-description {
+    font-size: 1.1rem;
+    color:white;
+    margin-bottom: 40px;
+}
+
+/* Image Section */
+.sub-image-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sub-project-image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.sub-project-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Technologies List */
+.sub-technology-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.sub-technology-list li {
+    margin-bottom: 10px;
+}
+
+/* Demo Link */
+.sub-demo-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sub-demo-link:hover {
+    color: var(--secondary-color); /* Change color to secondary color on hover */
+    text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Challenges & Solutions */
+.sub-project-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var();
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.sub-footer-text {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 768px) {
+    main {
+        padding: 40px 10px;
+    }
+
+    .sub-project-summary {
+        padding: 20px;
+    }
+
+    .sub-highlight-text {
+        font-size: 1.5rem;
+    }
+
+    .sub-project-description {
+        font-size: 1rem;
+    }
+}
